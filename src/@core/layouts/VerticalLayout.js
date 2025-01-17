@@ -50,7 +50,7 @@ const VerticalLayout = props => {
     setLastLayout,
     currentActiveItem
   } = props
-
+  console.log(menuData, menu)
   // ** Hooks
   const [isRtl, setIsRtl] = useRTL()
   const { skin, setSkin } = useSkin()

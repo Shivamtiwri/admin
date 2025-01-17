@@ -89,7 +89,6 @@ const Login = () => {
     source = require(`@src/assets/images/pages/${illustration}`).default;
 
   const adminlogin = data => {
-    console.log(data);
 
     AxiosConfigadmin.post(End_Urls.login, {
       email: data.email,

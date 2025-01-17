@@ -10,6 +10,15 @@ const DashboardRoutes = [
     path: '/dashboard/ecommerce',
     component: lazy(() => import('../../views/dashboard/ecommerce')),
     exact: true
+  },
+  {
+    path: '/dashboard',
+    component: lazy(() => import('../../views/dashboard/users')),
+    exact: true,
+    meta: {
+      action: 'read',
+      resource: 'ACL',
+    }
   }
 ]
 
