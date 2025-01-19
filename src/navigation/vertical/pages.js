@@ -7,19 +7,19 @@ export default [
     title: 'Account',
     icon: <FileText size={20} />,
     children: [
-      {
-        id: 'accountSettings',
-        title: 'Account Settings',
-        icon: <Circle size={12} />,
-        permissions: ['admin', 'editor'],
-        navLink: '/pages/account-settings'
-      },
+      // {
+      //   id: 'accountSettings',
+      //   title: 'Account Settings',
+      //   icon: <Circle size={12} />,
+      //   permissions: ['admin', 'editor'],
+      //   navLink: '/pages/account-settings'
+      // },
       {
         id: 'profile',
         title: 'Profile',
         icon: <Circle size={12} />,
         permissions: ['admin', 'editor'],
-        navLink: '/pages/profile',
+        navLink: '/pages/account-settings',
         collapsed: true
       },
       // {

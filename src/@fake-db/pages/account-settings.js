@@ -3,7 +3,7 @@ const data = {
   accountSetting: {
     general: {
       avatar: require('@src/assets/images/portrait/small/avatar-s-11.jpg').default,
-      username: 'johndoe',
+      username: 'SAA',
       fullName: 'John Doe',
       email: 'granger007@hogward.com',
       company: 'PIXINVENT'

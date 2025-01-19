@@ -3,7 +3,7 @@
 //Template config options
 const themeConfig = {
   app: {
-    appName: 'Shruthilaya',
+    appName: 'SAA',
     appLogoImage: require('@src/assets/images/logo/app_icon.png').default
   },
   layout: {

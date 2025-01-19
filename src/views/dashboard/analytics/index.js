@@ -101,18 +101,29 @@ const AnalyticsDashboard = () => {
         </Col>
       </Row>
       <Row className='match-height'>
+        {/* <Col lg='6' sm='12'>
+          <CardCongratulations />
+        </Col> */}
+        <Col lg='6' sm='6'>
+          <SubscribersGained kFormatter={kFormatter} />
+        </Col>
+        <Col lg='6' sm='6'>
+          <OrdersReceived kFormatter={kFormatter} warning={colors.warning.main} />
+        </Col>
+      </Row>
+      {/* <Row className='match-height'>
         <Col lg='6' xs='12'>
           <AvgSessions primary={colors.primary.main} />
         </Col>
         <Col lg='6' xs='12'>
           <SupportTracker primary={colors.primary.main} danger={colors.danger.main} />
         </Col>
-      </Row>
-      <Row className='match-height'>
+      </Row> */}
+      {/* <Row className='match-height'>
         <Col xs='12'>
           <InvoiceList />
         </Col>
-      </Row>
+      </Row> */}
     </div>
   )
 }

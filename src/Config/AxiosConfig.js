@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const baseURL = 'http://192.168.29.162:4000/user';
+export const baseURL = 'http://localhost:4000/user';
 // export const baseURL = "https://ezzogame.igtglobal.io/";
 // export const baseURL = "https://ezzotest.igtglobal.io/";
 

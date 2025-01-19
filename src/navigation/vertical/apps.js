@@ -3,53 +3,53 @@ import { Mail, MessageSquare, CheckSquare, Calendar, FileText, Circle, ShoppingC
 
 export default [
   {
-    header: 'Apps & Pages'
+    // header: 'Apps & Pages'
   },
-  {
-    id: 'users',
-    title: 'User',
-    icon: <User size={20} />,
-    navLink: '/apps/user/list'
-    // children: [
-    //   {
-    //     id: 'list',
-    //     title: 'List',
-    //     icon: <Circle size={12} />,
-    //     navLink: '/apps/user/list'
-    //   },
-    //   {
-    //     id: 'view',
-    //     title: 'View',
-    //     icon: <Circle size={12} />,
-    //     navLink: '/apps/user/view'
-    //   }
-    // ]
-  },
+  // {
+  //   id: 'users',
+  //   title: 'User',
+  //   icon: <User size={20} />,
+  //   navLink: '/apps/user/list'
+  //   // children: [
+  //   //   {
+  //   //     id: 'list',
+  //   //     title: 'List',
+  //   //     icon: <Circle size={12} />,
+  //   //     navLink: '/apps/user/list'
+  //   //   },
+  //   //   {
+  //   //     id: 'view',
+  //   //     title: 'View',
+  //   //     icon: <Circle size={12} />,
+  //   //     navLink: '/apps/user/view'
+  //   //   }
+  //   // ]
+  // },
 
-  {
-    id: 'roles',
-    title: 'Roles',
-    icon: <Shield size={20} />,
-    navLink: '/apps/roles'
-  },
-  {
-    id: 'permissions',
-    title: 'Permissions',
-    icon: <Shield size={20} />,
-    navLink: '/apps/permissions'
-  },
-  {
-    id: 'email',
-    title: 'Email',
-    icon: <Mail size={20} />,
-    navLink: '/apps/email'
-  },
-  {
-    id: 'chat',
-    title: 'Chat',
-    icon: <MessageSquare size={20} />,
-    navLink: '/apps/chat'
-  }
+  // {
+  //   id: 'roles',
+  //   title: 'Roles',
+  //   icon: <Shield size={20} />,
+  //   navLink: '/apps/roles'
+  // },
+  // {
+  //   id: 'permissions',
+  //   title: 'Permissions',
+  //   icon: <Shield size={20} />,
+  //   navLink: '/apps/permissions'
+  // },
+  // {
+  //   id: 'email',
+  //   title: 'Email',
+  //   icon: <Mail size={20} />,
+  //   navLink: '/apps/email'
+  // },
+  // {
+  //   id: 'chat',
+  //   title: 'Chat',
+  //   icon: <MessageSquare size={20} />,
+  //   navLink: '/apps/chat'
+  // }
   // {
   //   id: 'todo',
   //   title: 'Todo',

@@ -116,7 +116,7 @@ const AccountTabs = ({ data }) => {
           <CardTitle tag='h4'>Profile Details</CardTitle>
         </CardHeader>
         <CardBody className='py-2 my-25'>
-          <div className='d-flex'>
+          {/* <div className='d-flex'>
             <div className='me-25'>
               <img className='rounded me-50' src={avatar} alt='Generic placeholder image' height='100' width='100' />
             </div>
@@ -132,7 +132,7 @@ const AccountTabs = ({ data }) => {
                 <p className='mb-0'>Allowed JPG, GIF or PNG. Max size of 800kB</p>
               </div>
             </div>
-          </div>
+          </div> */}
           <Form className='mt-2 pt-50' onSubmit={handleSubmit(onSubmit)}>
             <Row>
               <Col sm='6' className='mb-1'>
@@ -148,31 +148,14 @@ const AccountTabs = ({ data }) => {
                 />
                 {errors && errors.firstName && <FormFeedback>Please enter a valid First Name</FormFeedback>}
               </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='lastName'>
-                  Last Name
-                </Label>
-                <Controller
-                  name='lastName'
-                  control={control}
-                  render={({ field }) => (
-                    <Input id='lastName' placeholder='Doe' invalid={errors.lastName && true} {...field} />
-                  )}
-                />
-                {errors.lastName && <FormFeedback>Please enter a valid Last Name</FormFeedback>}
-              </Col>
+              
               <Col sm='6' className='mb-1'>
                 <Label className='form-label' for='emailInput'>
                   E-mail
                 </Label>
                 <Input id='emailInput' type='email' name='email' placeholder='Email' defaultValue={data.email} />
               </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='company'>
-                  Company
-                </Label>
-                <Input defaultValue={data.company} id='company' name='company' placeholder='Company Name' />
-              </Col>
+             
               <Col sm='6' className='mb-1'>
                 <Label className='form-label' for='phNumber'>
                   Phone Number
@@ -185,93 +168,12 @@ const AccountTabs = ({ data }) => {
                   options={{ phone: true, phoneRegionCode: 'US' }}
                 />
               </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='address'>
-                  Address
-                </Label>
-                <Input id='address' name='address' placeholder='12, Business Park' />
-              </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='accountState'>
-                  State
-                </Label>
-                <Input id='accountState' name='state' placeholder='California' />
-              </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='zipCode'>
-                  Zip Code
-                </Label>
-                <Input id='zipCode' name='zipCode' placeholder='123456' maxLength='6' />
-              </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='country'>
-                  Country
-                </Label>
-                <Select
-                  id='country'
-                  isClearable={false}
-                  className='react-select'
-                  classNamePrefix='select'
-                  options={countryOptions}
-                  theme={selectThemeColors}
-                  defaultValue={countryOptions[0]}
-                />
-              </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='language'>
-                  Language
-                </Label>
-                <Select
-                  id='language'
-                  isClearable={false}
-                  className='react-select'
-                  classNamePrefix='select'
-                  options={languageOptions}
-                  theme={selectThemeColors}
-                  defaultValue={languageOptions[0]}
-                />
-              </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='timeZone'>
-                  Timezone
-                </Label>
-                <Select
-                  id='timeZone'
-                  isClearable={false}
-                  className='react-select'
-                  classNamePrefix='select'
-                  options={timeZoneOptions}
-                  theme={selectThemeColors}
-                  defaultValue={timeZoneOptions[0]}
-                />
-              </Col>
-              <Col sm='6' className='mb-1'>
-                <Label className='form-label' for='currency'>
-                  Currency
-                </Label>
-                <Select
-                  id='currency'
-                  isClearable={false}
-                  className='react-select'
-                  classNamePrefix='select'
-                  options={currencyOptions}
-                  theme={selectThemeColors}
-                  defaultValue={currencyOptions[0]}
-                />
-              </Col>
-              <Col className='mt-2' sm='12'>
-                <Button type='submit' className='me-1' color='primary'>
-                  Save changes
-                </Button>
-                <Button color='secondary' outline>
-                  Discard
-                </Button>
-              </Col>
+              
             </Row>
           </Form>
         </CardBody>
       </Card>
-      <DeleteAccount />
+      {/* <DeleteAccount /> */}
     </Fragment>
   )
 }

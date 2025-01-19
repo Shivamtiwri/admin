@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const baseURL = 'http://192.168.29.162:4000/admin';
+export const baseURL = 'http://localhost:4000/admin';
 
 const AxiosConfigadmin = axios.create({
   baseURL: baseURL,

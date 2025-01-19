@@ -6,10 +6,10 @@ const data = {
     {
       id: 1,
       fullName: 'John Doe',
-      username: 'johndoe',
-      password: 'admin',
+      username: 'Shruthilaya',
+      password: '123456',
       avatar: require('@src/assets/images/portrait/small/avatar-s-11.jpg').default,
-      email: 'admin@demo.com',
+      email: 'admin@gmail.com',
       role: 'admin',
       ability: [
         {
